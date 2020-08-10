@@ -25,6 +25,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-size: 7.5rem;
+	animation: fade-in 200ms ease-in;
+}
+
+@keyframes fade-in {
+	from {transform: translateX(200px); opacity: 0};
+	to {transform: translateX(-200px); opacity: 1};
 }
 
 button {
@@ -45,16 +51,16 @@ button:hover {
 	border: 1px solid #A9A9A9;
 }
 
-.next {
-	position: absolute;
-	top: 50%;
-	left: 3%;
-}
-
 .prev {
 	position: absolute;
 	top: 50%;
-	right: 3%;
+	left: 2%;
+}
+
+.next {
+	position: absolute;
+	top: 50%;
+	right: 2%;
 }
 
 .hidden {
